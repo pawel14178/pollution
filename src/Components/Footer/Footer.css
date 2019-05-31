@@ -1,0 +1,42 @@
+.Footer{
+    margin-top: 10vh;
+    height: 10vh;
+    display: flex;
+    width: 100;
+}
+
+.Footer__info{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.Footer__social{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Footer__social img{
+    height: 30px;
+    transition: transform .3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+}
+
+.Footer__social-github:hover{
+    transform: scale(1.1);
+}
+
+.Footer__social-linkedin:hover{
+    transform: scale(1.1);
+}
+
+.Footer__social-github:active{
+    transform: scale(1);
+}
+
+.Footer__social-linkedin:active{
+    transform: scale(1);
+}

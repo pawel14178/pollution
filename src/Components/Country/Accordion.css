@@ -1,0 +1,39 @@
+
+.Accordion-wrap{
+    margin-top: 5vh;
+    padding: 5px;
+    background: white;
+}
+
+.Accordion{
+    width: 100%;
+    font-size: 20px;
+    transition: all .3s;
+    margin: 5px auto;
+}
+
+.Accordion__header{
+    background: white;    
+    padding: 20px;
+    margin: 3px auto;
+    z-index: 20;
+    color: #777;
+    font-weight: bold;
+    transition: color .2s ease;
+    border-bottom: 3px solid rgb(0, 0, 0); 
+    width: 50%;
+}
+
+
+.Accordion__header:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.Accordion__desc{
+    padding: 0 100px;
+    z-index: 1;
+    transform-origin: top;
+    opacity: 0;
+    text-align: justify;
+}

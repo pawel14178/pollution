@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/pollution/static/css/main.b5819520.chunk.css",
+    "main.js": "/pollution/static/js/main.95ee4060.chunk.js",
+    "main.js.map": "/pollution/static/js/main.95ee4060.chunk.js.map",
+    "runtime~main.js": "/pollution/static/js/runtime~main.260eac75.js",
+    "runtime~main.js.map": "/pollution/static/js/runtime~main.260eac75.js.map",
+    "static/js/2.65f1e0d1.chunk.js": "/pollution/static/js/2.65f1e0d1.chunk.js",
+    "static/js/2.65f1e0d1.chunk.js.map": "/pollution/static/js/2.65f1e0d1.chunk.js.map",
+    "index.html": "/pollution/index.html",
+    "precache-manifest.7634322bff3199ecfe94606427dc8f0f.js": "/pollution/precache-manifest.7634322bff3199ecfe94606427dc8f0f.js",
+    "service-worker.js": "/pollution/service-worker.js",
+    "static/css/main.b5819520.chunk.css.map": "/pollution/static/css/main.b5819520.chunk.css.map",
+    "static/media/github.png": "/pollution/static/media/github.957c4dd9.png",
+    "static/media/linkedin.png": "/pollution/static/media/linkedin.dc4e8593.png",
+    "static/media/poll.jpg": "/pollution/static/media/poll.0a84d40a.jpg"
+  }
+}

@@ -96,6 +96,7 @@ class Country extends Component{
             .end((err, resp) => {
                 if (!err){
                     const cities = [];
+                    console.log(JSON.parse(resp.text));
                     JSON.parse(resp.text).results.map((city) => (
                         cities.push(city.city)
                         
@@ -159,7 +160,16 @@ class Country extends Component{
             )
         }
         else{
-            return null;
+            return(
+                <div className="welcome">
+                    <h1>
+                        Welcome
+                    </h1>
+                    <p>
+                        In this app you can check the most polluted cities currently in Poland, Germany, Spain and France (by OpanAQ.org) and read about that cities short description (by Wikipedia.org).
+                    </p>
+                </div>
+            );
         } 
     }
 

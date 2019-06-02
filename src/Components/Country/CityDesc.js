@@ -22,7 +22,7 @@ export default class CityDesc extends Component{
         this.handleText();
     }
 
-    loadDesc(site){
+    loadDesc = (site) =>{
         let searchUrl ="https://en.wikipedia.org/w/api.php?action=query&list=search&srwhat=text&format=json&srsearch="+ site ;
         
 
@@ -33,6 +33,7 @@ export default class CityDesc extends Component{
                 })
                 .then((json)=>{
                     this.gotData(json)
+                    console.log(json)
                 })                     
                 .catch(function(ex) {
                     console.log('parsing failed', ex)
@@ -41,6 +42,7 @@ export default class CityDesc extends Component{
         
     }
     gotData(data) {
+        console.log(data)
         let cityID = data.query.search[0].pageid;
         let title = data.query.search[0].title;
         title = title.replace(/\s+/g, '_');

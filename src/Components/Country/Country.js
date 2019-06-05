@@ -17,7 +17,7 @@ class Country extends Component{
         }
 
         this.arr = [
-            "Poland", "Germany", "France", "Spain"
+            "Poland", "Netherlands", "Belgium", "Great Britain"
         ];        
 
         this.state = {
@@ -32,16 +32,15 @@ class Country extends Component{
     checkCountry = (value) => {
         switch (value.toLowerCase()) {
             case "poland":    this.loadCities ("PL") ;     
-                 
-                break; 
-            case "germany": this.loadCities ("DE") ; 
-           
+            break; 
+
+            case "netherlands": this.loadCities ("NL") ;             
             break;
-            case "france": this.loadCities ("FR") ; 
-            
+
+            case "belgium": this.loadCities ("BE") ;             
             break;
-            case "spain": this.loadCities ("ES") ; 
-            
+
+            case "great britain": this.loadCities ("GB") ;             
             break;
         
             default:  this.loadCities ("") ; 
@@ -96,7 +95,6 @@ class Country extends Component{
             .end((err, resp) => {
                 if (!err){
                     const cities = [];
-                    console.log(JSON.parse(resp.text));
                     JSON.parse(resp.text).results.map((city) => (
                         cities.push(city.city)
                         
@@ -138,7 +136,7 @@ class Country extends Component{
         } 
         return(
             <ul className="slideDown">
-                {this.state.suggestion.map((item) => <li key={item.city}  onClick={()=> this.suggestionSelected(item)}>{item}</li>)}
+                {this.state.suggestion.map((item) => <li key={item}  onClick={()=> this.suggestionSelected(item)}>{item}</li>)}
             </ul>
         )
     }
@@ -166,7 +164,7 @@ class Country extends Component{
                         Welcome
                     </h1>
                     <p>
-                        In this app you can check the most polluted cities currently in Poland, Germany, Spain and France (by OpanAQ.org) and read about that cities short description (by Wikipedia.org).
+                        In this app you can check the most polluted cities currently in Poland, Netherlands, Belgium and Great Britain (by OpanAQ.org) and read about that cities short description (by Wikipedia.org).
                     </p>
                 </div>
             );
